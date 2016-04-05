@@ -8,28 +8,33 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
+class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    @IBOutlet weak var tableView: UITableView!
+    let parentVC = self.parentViewController as! CustomTabBarController
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let dict = parentVC.busStops[0]
+        print("\(dict)")
 
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return parentVC.busStops.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let stop = parentVC.busStops[indexPath.row]
+        
+        let long = stop["longitude"] as? String
+        let lat = stop["latitude"] as? String
+        cell.textLabel?.text = stop["stop_id"] as? String
+        cell.detailTextLabel?.text = "\(lat!), \(long!)"
+        
+        return cell
     }
-    */
-
 }

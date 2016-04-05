@@ -14,6 +14,7 @@
 		222DDAB11CB4725F000BBAF6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DDAB01CB4725F000BBAF6 /* MapViewController.swift */; };
 		222DDAB31CB472F2000BBAF6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DDAB21CB472F2000BBAF6 /* ListViewController.swift */; };
 		222DDAB71CB47342000BBAF6 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DDAB61CB47342000BBAF6 /* CustomTabBarController.swift */; };
+		222DDAB91CB47434000BBAF6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DDAB81CB47434000BBAF6 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		222DDAB01CB4725F000BBAF6 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = BusRoutes/MapViewController.swift; sourceTree = "<group>"; };
 		222DDAB21CB472F2000BBAF6 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = BusRoutes/ListViewController.swift; sourceTree = "<group>"; };
 		222DDAB61CB47342000BBAF6 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTabBarController.swift; path = BusRoutes/CustomTabBarController.swift; sourceTree = "<group>"; };
+		222DDAB81CB47434000BBAF6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222DDAB91CB47434000BBAF6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 		222DDA8A1CB46F6E000BBAF6 = {
 			isa = PBXGroup;
 			children = (
+				222DDAB81CB47434000BBAF6 /* MapKit.framework */,
 				222DDAB61CB47342000BBAF6 /* CustomTabBarController.swift */,
 				222DDAB21CB472F2000BBAF6 /* ListViewController.swift */,
 				222DDAB01CB4725F000BBAF6 /* MapViewController.swift */,
