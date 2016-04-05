@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		222DDA971CB46F6E000BBAF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DDA961CB46F6E000BBAF6 /* AppDelegate.swift */; };
-		222DDA991CB46F6E000BBAF6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DDA981CB46F6E000BBAF6 /* FirstViewController.swift */; };
-		222DDA9B1CB46F6E000BBAF6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DDA9A1CB46F6E000BBAF6 /* SecondViewController.swift */; };
 		222DDA9E1CB46F6E000BBAF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222DDA9C1CB46F6E000BBAF6 /* Main.storyboard */; };
 		222DDAA01CB46F6E000BBAF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222DDA9F1CB46F6E000BBAF6 /* Assets.xcassets */; };
 		222DDAA31CB46F6F000BBAF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222DDAA11CB46F6F000BBAF6 /* LaunchScreen.storyboard */; };
+		222DDAB11CB4725F000BBAF6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DDAB01CB4725F000BBAF6 /* MapViewController.swift */; };
+		222DDAB31CB472F2000BBAF6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DDAB21CB472F2000BBAF6 /* ListViewController.swift */; };
+		222DDAB71CB47342000BBAF6 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DDAB61CB47342000BBAF6 /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		222DDA931CB46F6E000BBAF6 /* BusRoutes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusRoutes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222DDA961CB46F6E000BBAF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		222DDA981CB46F6E000BBAF6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		222DDA9A1CB46F6E000BBAF6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		222DDA9D1CB46F6E000BBAF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		222DDA9F1CB46F6E000BBAF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		222DDAA21CB46F6F000BBAF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		222DDAA41CB46F6F000BBAF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222DDAB01CB4725F000BBAF6 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = BusRoutes/MapViewController.swift; sourceTree = "<group>"; };
+		222DDAB21CB472F2000BBAF6 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = BusRoutes/ListViewController.swift; sourceTree = "<group>"; };
+		222DDAB61CB47342000BBAF6 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTabBarController.swift; path = BusRoutes/CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,9 @@
 		222DDA8A1CB46F6E000BBAF6 = {
 			isa = PBXGroup;
 			children = (
+				222DDAB61CB47342000BBAF6 /* CustomTabBarController.swift */,
+				222DDAB21CB472F2000BBAF6 /* ListViewController.swift */,
+				222DDAB01CB4725F000BBAF6 /* MapViewController.swift */,
 				222DDA951CB46F6E000BBAF6 /* BusRoutes */,
 				222DDA941CB46F6E000BBAF6 /* Products */,
 			);
@@ -57,8 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				222DDA961CB46F6E000BBAF6 /* AppDelegate.swift */,
-				222DDA981CB46F6E000BBAF6 /* FirstViewController.swift */,
-				222DDA9A1CB46F6E000BBAF6 /* SecondViewController.swift */,
 				222DDA9C1CB46F6E000BBAF6 /* Main.storyboard */,
 				222DDA9F1CB46F6E000BBAF6 /* Assets.xcassets */,
 				222DDAA11CB46F6F000BBAF6 /* LaunchScreen.storyboard */,
@@ -139,9 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				222DDA9B1CB46F6E000BBAF6 /* SecondViewController.swift in Sources */,
 				222DDA971CB46F6E000BBAF6 /* AppDelegate.swift in Sources */,
-				222DDA991CB46F6E000BBAF6 /* FirstViewController.swift in Sources */,
+				222DDAB11CB4725F000BBAF6 /* MapViewController.swift in Sources */,
+				222DDAB71CB47342000BBAF6 /* CustomTabBarController.swift in Sources */,
+				222DDAB31CB472F2000BBAF6 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
