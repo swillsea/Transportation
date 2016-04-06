@@ -11,12 +11,15 @@ import UIKit
 class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    let parentVC = self.parentViewController as! CustomTabBarController
-
+    var parentVC = CustomTabBarController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.reloadData()
+        
+        parentVC = self.parentViewController as! CustomTabBarController
+
         let dict = parentVC.busStops[0]
         print("\(dict)")
 
@@ -28,6 +31,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        
+
         let stop = parentVC.busStops[indexPath.row]
         
         let long = stop["longitude"] as? String

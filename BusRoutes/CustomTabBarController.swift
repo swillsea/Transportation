@@ -24,7 +24,7 @@ class CustomTabBarController: UITabBarController {
                 self.busStops = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)["row"] as! [NSDictionary]
                 
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.sendToListView()
+//                    self.sendToListView()
                 })
                 
             } catch let error as NSError {
@@ -35,16 +35,20 @@ class CustomTabBarController: UITabBarController {
         
     }
     
+//    override func setValuesForKeysWithDictionary(keyedValues: [String : AnyObject]) {
+//    }
+    
+    
 //    
 //    func sendToMapView() {
 //        let destVC = self.viewControllers![0] as? MapViewController
 //        destVC!.busStops = self.busStops
 //    }
 //    
-    func sendToListView() {
-        let destVC = self.viewControllers![1] as? ListViewController
-        destVC!.tableView?.reloadData()
-    }
+//    func sendToListView() {
+//        let destVC = self.viewControllers![1] as? ListViewController
+//        destVC!.tableView?.reloadData()
+//    }
     
     
     
